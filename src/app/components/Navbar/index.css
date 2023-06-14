@@ -1,0 +1,118 @@
+:root {
+  --mainColor: #917196;
+  --mainColorLight: #5767aa;
+  --secondaryColor: #db2b39;
+  --textColor: black;
+}
+
+.header_nav {
+  position: sticky;
+  top: 0;
+  z-index: 100000;
+  display: flex;
+  padding: 0 90px;
+  justify-content: space-around;
+  height: 10vh;
+  color: var(--textColor);
+  transition: 150ms linear;
+}
+.header_on_show{
+  background: rgba( 255, 255, 255, 0.3 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.logo{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+
+color: #402325;
+}
+nav div {
+  color: var(--textColor);
+  text-decoration: none;
+}
+
+nav div:hover {
+  color: var(--secondaryColor);
+}
+nav {
+  width: 100%;
+  justify-content: end;
+  gap: 1.9rem;
+}
+
+.nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #917196;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+.header_nav div,
+nav {
+  opacity: 1;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  
+  color: #402325;
+  display: flex;
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .header_nav .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+  .logo {
+    padding-left: 1vw;
+    width: 100%;
+  }
+  .header_nav nav {
+    position: fixed;
+    left: -100vw;
+    opacity: 0.8;
+    z-index: 1000000000;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--mainColor);
+    transition: 1s;
+  }
+
+  .header_nav .responsive_nav {
+    transform: translateX(100vw);
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+  }
+
+  nav div {
+    font-size: 1.5rem;
+  }
+}

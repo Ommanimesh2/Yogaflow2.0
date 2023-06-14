@@ -1,0 +1,166 @@
+$midnight: #2c3e50;
+$clouds: #ecf0f1;
+// General
+
+
+
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+// Layout
+.row {
+  background: url('../../app/assets/images/faqs.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  position: relative;
+  top: -10vh;
+  padding: 27vh 130px;
+  background-color: #F7F4F3;
+  display: flex;
+
+  h2 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 20px;
+    font-size: 90px;
+    line-height: 120%;
+    /* identical to box height, or 108px */
+    text-align: center;
+
+    color: #402325;
+  }
+
+  h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 90px;
+    /* identical to box height, or 24px */
+
+
+    color: #402325;
+  }
+
+  .col {
+    flex: 1;
+
+    &:last-child {
+      margin-left: 1em;
+    }
+  }
+}
+
+/* Accordion styles */
+.tabs {}
+
+.tab {
+  width: 100%;
+  color: #402325;
+  overflow: hidden;
+  background: #F7F4F3;
+  border: 2px solid #402325;
+  border-radius: 24px;
+  margin: 20px 0;
+
+  &-question {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 120%;
+    /* or 38px */
+
+    /* leading-trim and text-edge are draft CSS properties.
+    
+    Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+    */
+    padding-left: 52px;
+    display: flex;
+    align-items: center;
+
+    color: #402325;
+  }
+
+  &-number {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    /* identical to box height, or 58px */
+
+
+    /* Text/txt-tertiary */
+
+    color: rgba(60, 60, 67, 0.5);
+  }
+
+  &-label {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    align-items: center;
+
+    padding: 1em;
+    height: 100px;
+    background: #F7F4F3;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &::after {
+
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      transition: all .35s;
+    }
+  }
+
+  &-title {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-content {
+    height: 0;
+    padding: 0 130px;
+    background: white;
+    transition: all .35s;
+
+
+  }
+
+  &-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+
+    cursor: pointer;
+
+  }
+}
+
+// :checked
+input:checked {
+  +.tab-label {
+    background: white;
+
+  }
+
+  ~.tab-content {
+    max-height: 100vh;
+    height: 10vh;
+    transition: 0.5s;
+  }
+}

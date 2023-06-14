@@ -1,0 +1,59 @@
+.services{
+    background-image: url('../../app/assets/images/services.png');
+    background-color: #F7F4F3;
+    background-size: cover;
+    height: 140vh;
+    position: relative;
+    top: -10vh;
+    padding: 20vh 76px;
+}
+.services h1{
+    font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 400;
+font-size: 90px;
+line-height: 120%;
+/* identical to box height, or 108px */
+padding-left: 16px;
+
+color: #402325;
+}
+.services-card-container{
+
+    padding: 0 auto;
+    display: grid;
+    margin-top: 64px;
+    height:420px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+.service-card{
+    position: relative;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.service-heading{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 120%;
+    /* identical to box height, or 34px */
+    padding-top: 15px;
+    text-align: center;
+    color: #F7F4F3;
+}
+.service-body{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 156%;
+/* or 31px */
+position: absolute;
+left: 72px;
+top: 144px;
+max-width: 270px;
+color: #000000;
+}
