@@ -30,7 +30,10 @@ const Navbar = () => {
       <header className={color ? "header_nav header_on_show" : "header_nav"}>
         <div className="logo">
           <img src={logo} alt="" srcset="" />
-          <div className="title">Yogaflow</div>
+          <div className="title">
+            <div className="title_first">Yogaflow</div>
+            <div className="title_second">.Vandana</div>
+          </div>
         </div>
         <nav ref={navRef}>
           <Link style={{ textDecoration: "none" }} to="/">

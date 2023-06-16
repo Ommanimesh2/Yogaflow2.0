@@ -1,0 +1,48 @@
+.why_yoga_wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-left: 90px;
+  justify-content: space-between;
+  height: 80vh;
+  column-gap: 200px;
+}
+.why_first {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 134.97%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  margin: 3vh 0;
+
+  color: #ff8598;
+}
+.why_second,
+.why_third {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 130%;
+  /* or 36px */
+
+  display: flex;
+  align-items: center;
+
+  color: #070217;
+}
+.why_yoga {
+}
+.text_scroll {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 134.97%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #070217;
+}

@@ -3,8 +3,12 @@
   --mainColorLight: #5767aa;
   --secondaryColor: #db2b39;
   --textColor: black;
+  --mainTextColor: #FF8598;
 }
-
+.title{
+ display: flex;
+ flex-direction: column;
+}
 .header_nav {
   position: sticky;
   top: 0;
@@ -13,7 +17,8 @@
   padding: 0 90px;
   justify-content: space-around;
   height: 10vh;
-  color: var(--textColor);
+  color: var(--mainTextColor);
+
   transition: 150ms linear;
 }
 .header_on_show{
@@ -33,7 +38,8 @@ line-height: 29px;
 /* identical to box height */
 
 
-color: #402325;
+color: var(--mainTextColor);
+
 }
 nav div {
   color: var(--textColor);
@@ -70,7 +76,8 @@ nav {
   font-size: 20px;
   line-height: 24px;
   
-  color: #402325;
+  color: var(--mainTextColor);
+
   display: flex;
   align-items: center;
 }

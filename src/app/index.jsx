@@ -1,23 +1,22 @@
-import './index.css';
-import BasicRoutes from './routes/BasicRoutes';
-import Navbar from './components/Navbar';
-import { useEffect } from 'react';
-import WebFont from 'webfontloader';
-import Footer from './components/Footer';
+import "./index.css";
+import BasicRoutes from "./routes/BasicRoutes";
+import Navbar from "./components/Navbar";
+import { useEffect } from "react";
+import WebFont from "webfontloader";
+import Footer from "./components/Footer";
 function App() {
-
-useEffect(() => {
-  WebFont.load({
-    google: {
-      families: ['Playfair Display', 'Poppins','Inter']
-    }
-  });
- }, []);
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ["Playfair Display", "Gilroy", "Poppins", "Inter"],
+      },
+    });
+  }, []);
   return (
-    <>
-    <Navbar />
-    <BasicRoutes />
-    </>
+    <div className="App">
+      <Navbar />
+      <BasicRoutes />
+    </div>
   );
 }
 

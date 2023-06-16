@@ -1,72 +1,56 @@
-import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import image from "../../../../app/assets/images/random.png"
-import './index.css'
-import { EffectCoverflow, Pagination, Navigation } from 'swiper';
+import React from "react";
+import "./index.css";
+import circles from "../../../../app/assets/gifs/circles.gif";
+import wellIcon from "../../../../app/assets/images/wellnessIcon.png";
 const Wellness = () => {
   return (
-    <div className="container">
-      <h1 className="heading">Wellness & <span>YOGA</span></h1>
-      <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        loop={true}
-        slidesPerView={'auto'}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 2.5,
-        }}
-        pagination={{ el: '.swiper-pagination', clickable: true }}
-        navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-          clickable: true,
-        }}
-        modules={[EffectCoverflow, Pagination, Navigation]}
-        className="swiper_container"
-      >
-        <SwiperSlide>
-          <img src={image} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={image} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={image} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={image} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={image} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={image} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={image} alt="slide_image" />
-        </SwiperSlide>
-
-        <div className="slider-controler">
-          <div className="swiper-button-prev slider-arrow">
-            <ion-icon name="arrow-back-outline"></ion-icon>
-          </div>
-          <div className="swiper-button-next slider-arrow">
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-          </div>
-          <div className="swiper-pagination"></div>
+    <>
+      <div className="wellness_wrapper">
+        <div className="circles_image_wrapper">
+          <img src={circles} alt="" />
         </div>
-      </Swiper>
-    </div>
-  )
-}
+        <div className="wellness_cards_wrapper">
+          <div className="wellness_card">
+            <div className="wellness_card_img">
+              <img src={wellIcon} alt="" />
+            </div>
+            <div className="wellness_card_text">
+              <div className="heading">Full Rejuvination</div>
+              <div className="body">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum llit anim id est
+                laborum
+              </div>
+            </div>
+          </div>
+          <div className="wellness_card">
+            <div className="wellness_card_img">
+              <img src={wellIcon} alt="" />
+            </div>
+            <div className="wellness_card_text">
+              <div className="heading">Extension of Spring</div>
+              <div className="body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                officiis tempora ut nesciunt mollitia libero!
+              </div>
+            </div>
+          </div>
+          <div className="wellness_card">
+            <div className="wellness_card_img">
+              <img src={wellIcon} alt="" />
+            </div>
+            <div className="wellness_card_text">
+              <div className="heading">Against Aging</div>
+              <div className="body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                officiis tempora ut nesciunt mollitia libero!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default Wellness
+export default Wellness;

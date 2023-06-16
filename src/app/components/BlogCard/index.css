@@ -1,0 +1,105 @@
+.blog_card {
+  height: 400px;
+  width: 310px;
+  background-color: white;
+  width: 310px;
+  border-radius: 10px;
+}
+.blog_card_img {
+  width: 310px;
+}
+.blog_card_img img {
+  width: 310px;
+}
+.yogaflow_blog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.yogaflow_blog .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 12px;
+  /* identical to box height, or 120% */
+
+  letter-spacing: 0.006em;
+
+  /* 1 */
+
+  color: #070217;
+}
+.yogaflow_blog .time {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 12px;
+  /* identical to box height, or 120% */
+
+  text-align: right;
+  letter-spacing: 0.006em;
+
+  /* BUTTON_BACK_TEXT */
+
+  color: #9492a0;
+}
+.blog_title {
+  padding: 15px 20px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 26px;
+  /* identical to box height, or 130% */
+
+  letter-spacing: 0.0015em;
+
+  /* 3 */
+
+  color: #ff8598;
+}
+
+.written_wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px 20px;
+}
+.blog_written_by {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+.blog_content {
+  padding: 12px 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  /* or 150% */
+
+  letter-spacing: 0.004em;
+
+  color: #868686;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog_author .name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.004em;
+  color: #070217;
+}
+.blog_author .designation {
+  font-size: 12px;
+}

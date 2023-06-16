@@ -1,0 +1,34 @@
+.ticker-title {
+  width: 200vw;
+
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 134.97%;
+  display: flex;
+  column-gap: 30px !important        ;
+  flex-direction: row;
+  letter-spacing: 0.02em;
+  overflow: hidden;
+  color: #070217;
+}
+.ticker-title span {
+  overflow-x: hidden;
+  width: 100vw;
+  max-height: 50px;
+}
+.ticker-title > * {
+  animation: title 12s infinite linear;
+}
+.ticker {
+  overflow-x: hidden;
+}
+@keyframes title {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-233px);
+  }
+}
