@@ -1,0 +1,119 @@
+.session_card_wrapper {
+    width: 380px;
+    height: 510.75px;
+    margin: 41px;
+}
+
+.session_card_imp {
+    width: 380px;
+    height: 510.75px;
+    border-radius: 20px;
+    background: #FF8598;
+    color: white;
+    box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.20) inset, 0px 10px 25px 0px rgba(0, 0, 0, 0.05);
+}
+
+.session_card {
+    width: 380px;
+    height: 510.75px;
+    border-radius: 20px;
+    color: var(--1, #070217);
+    box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.20) inset, 0px 10px 25px 0px rgba(0, 0, 0, 0.05);
+
+}
+
+.session_heading {
+    color: var(--3, #FF8598);
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    /* 153.846% */
+    margin: 9px 0;
+    letter-spacing: 1.092px;
+    text-transform: uppercase;
+    display: inline-flex;
+    padding: 4px 8.51px 4px 9.08px;
+    align-items: flex-start;
+    border-radius: 6px;
+    background: rgba(255, 133, 152, 0.20);
+}
+
+.session_price span:first-child {
+
+    margin: 9px 0;
+
+    font-family: Inter;
+    font-size: 57px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 71.25px;
+    /* 125% */
+    letter-spacing: -1.254px;
+}
+
+.session_price span:last-child {
+
+    font-family: Inter;
+    font-size: 21px;
+    margin: 9px 0;
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.25px;
+    /* 125% */
+    letter-spacing: -0.368px;
+}
+
+.session_description {
+
+    font-family: Inter;
+    font-size: 15px;
+    margin: 9px 0;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.5px;
+    /* 150% */
+    letter-spacing: -0.135px;
+}
+
+.session_book {
+    display: flex;
+    width: 300px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    border-radius: 8px;
+    border: 0;
+    background: #FF8598;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    height: 45px;
+    /* 150% */
+}
+
+.session_feature {
+
+    font-family: Inter;
+    font-size: 16px;
+    margin: 15px 0;
+    display: flex;
+
+
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: -0.176px;
+}
+
+.session_feature img {
+    margin-right: 20px;
+}

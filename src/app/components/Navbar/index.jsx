@@ -52,6 +52,15 @@ const Navbar = () => {
           <Link style={{ textDecoration: "none" }} to="/contact">
             <div className="navlinks">Contact Me</div>
           </Link>
+          <Link style={{ textDecoration: "none" }} to="/programs">
+            <div className="navlinks">Programs</div>
+          </Link>
+          <Link style={{ textDecoration: "none" }} to="/blogs">
+            <div className="navlinks">Blogs</div>
+          </Link>
+          <Link style={{ textDecoration: "none" }} to="/bookasession">
+            <div className="navlinks">Book Session</div>
+          </Link>
           {/* <button
             className="nav-btn nav-close-btn"
             onClick={showNavbar}>

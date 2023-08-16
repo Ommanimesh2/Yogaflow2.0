@@ -1,25 +1,44 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./index.scss";
-import stillDoubts from '../../app/assets/images/till-doubts.png'
+import stillDoubts from "../../app/assets/images/till-doubts.png";
 import FAQBoxes from "./components/FAQBoxes";
+import API from "../../app/api/axios";
 const Faqs = () => {
+  const [faq, setFaq] = useState();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await API.get("faqs");
+      const resp = await response.data.data;
+      console.log(resp);
+      setFaq(resp);
+    };
+
+    fetchData();
+  }, []);
   return (
     <div className="row">
-    <div className="col">
-      <h2>Frequently Asked <b>Questions</b></h2>
-      <h4>Everything you need to know about the services I offer. Can’t find the andwer you’re looking for? Please get in touch. </h4>
-      <div className="tabs">
-       <FAQBoxes id={1} question="aksdhfajsdfhasd faj  sdfhaojs dfha sdjf asd" answer="skuf giosdf Everything you need to know about the services I offer. Can’t find the andwer you’re looking for? Please get in touch.  gsd fhgo hsdfug hsudf gps dfg hsd fhgsd fg"/>
-       <FAQBoxes id={2} question="aksdhfajsdfhasd faj sdfhaojs dfha sdjf asd" answer="skuf giosdf gsd fhgo hsdfug hsudf gps dfg hsd fhgsd fg"/>
-       <FAQBoxes id={3} question="aksdhfajsdfhasd faj sdfhaojs dfha sdjf asd" answer="skuf giosdf gsd fhgo hsdfug hsudf gps dfg hsd fhgsd fg"/>
-       <FAQBoxes id={4} question="aksdhfajsdfhasd faj sdfhaojs dfha sdjf asd" answer="skuf giosdf gsd fhgo hsdfug hsudf gps dfg hsd fhgsd fg"/>
+      <div className="col">
+        <div className="faq_content">
+          <div className="title">Frequently Asked Questions</div>
+          <div className="sub_title">
+            Can’t find the answer you’re looking for? Please get in touch.{" "}
+          </div>
+        </div>
+        <div className="tabs">
+          {faq?.map((faq) => {
+            return (
+              <FAQBoxes
+                id={faq.id}
+                question={faq.attributes.question}
+                answer={faq.attributes.answer}
+              />
+            );
+          })}
+        </div>
       </div>
-
     </div>
-    
-  </div>
-     
   );
 };
 

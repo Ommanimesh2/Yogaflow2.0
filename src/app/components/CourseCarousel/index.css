@@ -1,0 +1,122 @@
+.card-container {
+    margin-right: 20px;
+}
+
+.carousel {
+    margin: 60px 0;
+}
+
+.course_wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    row-gap: 10px;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.course_frame {
+    overflow: hidden;
+    width: 90vw;
+    margin: 20px 0;
+}
+
+.course_box-container {
+    display: flex;
+    width: max-content;
+    column-gap: 10px;
+    overflow: hidden;
+}
+
+.box {
+    box-sizing: border-box;
+    border: 5px solid #fff;
+    background: #00e7ff;
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+}
+
+.button {
+    background: #666;
+    color: #fff;
+    width: 50px;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.button-2-container {
+    display: flex;
+}
+
+.button-2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background: #e0e0e0;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.active {
+    background: #999;
+}
+
+.react-horizontal-scrolling-menu--scroll-container ::-webkit-scrollbar {
+    display: none
+}
+
+.course_box-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+.react-horizontal-scrolling-menu--scroll-container {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .react-horizontal-scrolling-menu--scroll-container {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
+        height: 8px;
+        display: block;
+    }
+
+    .react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar-track {
+        border-radius: 12px;
+        background-color: black;
+    }
+
+    .react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar-thumb {
+        border-radius: 12px;
+        background-color: #1977f0;
+    }
+
+    .card-container {
+        padding: 30px 0;
+    }
+}

@@ -1,0 +1,37 @@
+.programs_title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 134.97%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    margin: 30px 0;
+    color: #FF8598;
+}
+
+.programs_body {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 120%;
+    /* or 34px */
+
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    color: #070217;
+
+
+}
+
+.programs_wrapper {
+    margin: 65px;
+}
+
+.programs_content {
+    margin: 120px 0;
+}

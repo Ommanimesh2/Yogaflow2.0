@@ -1,0 +1,28 @@
+.trending_blog_wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 90px;
+  column-gap: 60px;
+}
+.trending_blog_content {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 130%;
+  /* or 36px */
+  margin: 20px 0;
+  color: #070217;
+}
+.trending_blog_title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 134.97%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  margin: 20px 90px;
+  color: #ff8598;
+}

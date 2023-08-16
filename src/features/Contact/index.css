@@ -1,59 +1,58 @@
-.contact{
+.contact {
     height: 100vh;
-    background-color: #F7F4F3;
-    background-image: url('../../app/assets/images/contact.png');
-    background-size: cover;
     position: relative;
     top: -12vh;
     padding: 0 116px;
     padding-top: 26vh;
     justify-content: space-between;
     display: flex;
-    
+
     flex-direction: row;
 
 }
-.contact h1{
+
+.contact h1 {
     font-family: 'Playfair Display';
-font-style: normal;
-font-weight: 400;
-font-size: 90px;
-line-height: 120%;
-/* identical to box height, or 108px */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 120%;
+    /* identical to box height, or 108px */
 
 
-color: #402325;
+    color: black;
 }
-.contact form{
+
+.contact form {
     display: flex;
     flex-direction: column;
     margin-top: 25px;
 
 }
 
-.contact input{
+.contact input {
     display: flex;
-flex-direction: column;
-align-items: top;
-margin: 20px 0;
-background-color: #F7F4F3;
-gap: 40px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 120%;
-/* identical to box height, or 29px */
+    flex-direction: column;
+    align-items: top;
+    margin: 20px 0;
+    background-color: #F7F4F3;
+    gap: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    /* identical to box height, or 29px */
 
 
-color: #402325;
-height: 69px;
-border:0px;
-border-bottom: 3px solid #402325;
+    color: black;
+    height: 69px;
+    border: 0px;
+    border-bottom: 3px solid #FF8598;
 }
 
-.contact-details{
-    background-color: #402325;
+.contact-details {
+    background-color: #FF8598;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -62,24 +61,25 @@ border-bottom: 3px solid #402325;
     /* or 36px */
     padding: 10px;
     letter-spacing: 0.02em;
-    
-    color: #F7F4F3;
-}
-.contact-btn{
-    background: #402325;
-border-radius: 48px;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 24px 56px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 28px;
-line-height: 120%;
-/* identical to box height, or 34px */
-margin-top: 12px;
 
-color: #FFFFFF;
+    color: black;
+}
+
+.contact-btn {
+    background: #FF8598;
+    border-radius: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 56px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 120%;
+    /* identical to box height, or 34px */
+    margin-top: 12px;
+
+    color: black;
 }
